@@ -33,7 +33,7 @@ echo -e $blue "#~> Website : \e]8;;http://sametsahin.net\ahttp://sametsahin.net\
 echo -e $white "Let's Create XSS Payload... \n" $finishColor
 
 
-echo -e $ozelkirmizi "Are you know XSS type ? \n 1-) Normal XSS \n 2-) HTML Inline XSS \n 3-) JavaScript Inline XSS \n If you are want to Create a Custom Payload Please Press 4." $finishColor
+echo -e $ozelkirmizi "Do you know XSS type ? \n 1-) Normal XSS \n 2-) HTML Inline XSS \n 3-) JavaScript Inline XSS \n If you want to Create a Custom Payload Please Press 4." $finishColor
 read -p " Choice == " xssTipSec
 echo -e $darkgray "------------------------------" $finishColor
 case $xssTipSec in
@@ -109,7 +109,7 @@ sleep 0.1
 echo -e $darkgray "------------------------------" $finishColor
 
 #------------------------------------------------------------------------ PART 4 -- ANSWER BASED!!!
-echo -e " Do you want Extra attribute (href,src...) ? (y,N)"
+echo -e " Do you want an Extra attribute (href,src...) ? (y,N)"
 read -p " Choice == " extraAttribute
 if [[ $extraAttribute =~ ^[Yy]$ ]];
 	then
@@ -172,7 +172,7 @@ esac
 echo -e $darkgray "------------------------------" $finishColor
 noSpaceXSSPayload=$(echo $xssPayload | tr -d ' ')
 
-echo -e $ozelkirmizi "Do you want URL Encode for WaF ? (Y,n)" $finishColor
+echo -e $ozelkirmizi "Do you want an URL Encoding for WaF ? (Y,n)" $finishColor
 read -p " Choice == " urlEncodeIstiyoMu 
 echo -e ""
 echo -e $darkgray "------------------------------" $finishColor
@@ -187,7 +187,7 @@ fi
 
 #--------------------  #HTML Encode with PERL, I <3 PERL
 
-echo -e $ozelkirmizi "Do you want HTML Encode for WaF ? (y,N)" $finishColor
+echo -e $ozelkirmizi "Do you want a HTML Encoding for WaF ? (y,N)" $finishColor
 read -p " Choice == " htmlEncodeIstiyoMu
 echo -e ""
 if [[ $htmlEncodeIstiyoMu =~ ^[Yy]$ ]];
